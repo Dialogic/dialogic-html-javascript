@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<!-- HTML for simple WebRTC Outbound Call Demo -->
+
+    <title>Dialogic WebRTC Simple Demo</title>
+
+    <!-- Need jquery -->
+    <script src="js/jquery-1.8.3.js" type="text/javascript" ></script>
+
+    <!-- Dialogic API is in webrtc.js -->
+    <script src="js/webrtc.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- This demo's JS -->
+    <script src="js/simpleDemo.js" type="text/javascript" charset="utf-8"></script>
+ 
+    <style type="text/css">
+        #xmsipaddr
+        {
+            width: 124px;
+        }
+        #login
+        {
+            width: 78px;
+        }
+        #remoteVideoContainer
+        {
+            width: 600px;
+        }
+        #status
+        {
+            width: 281px;
+            height: 49px;
+        }
+    </style>
+ 
+</head>
+
+<body>
+
+<div id="controls">
+    <h1>PowerMedia XMS </h1>
+    <h2>Simple Outbound Call Demo</h2> 
+
+    <!-- Text fields and buttons for demo operation -->
+    <p><b>XMS Server IP Address:</b><b>&nbsp;</b><input id="xmsipaddr" type="text"/>
+
+    <p><b>Login Name:</b></p>
+    <p><input id="loginname" type="text"> </input>
+    <button id="login" class="btn btn-primary">Login</button></p>
+
+    <p><b>Name to Call:</b></p>
+    <p><input id="callname" type="text"></input>
+
+    <button id="makecall" class="btn btn-primary">Make Call</button>
+    <button id="hangup" class="btn btn-primary"style="visibility:hidden">Hangup</button></p>
+
+</div>
+
+<div id="remoteVideoContainer">
+	<video id="remoteVideo" controls="true" autoplay="autoplay">
+		</video>
+</div>
+
+<div id="localVideoContainer">
+	<video width="108" height="80" id="localVideo" autoplay="autoplay">
+</video> 
+
+</div>
+
+    <p><b>Status:</b></p>
+    <p><input id="status" type="text" size="70" readonly="readonly"/></p>
+
+</body>
+
+</html>
+
