@@ -39,6 +39,8 @@ d. Click Login to register with XMS server. Allow the browser to use microphone 
 
 8. Click Hangup when done.
 
+Note - simpledemo will run on local installs (bare-metal & VM) and AWS/Rackspace instances
+
 
 **video_canvas_html5** - Javascript code that used the HTML5 drawImage() method to copy a <video> source to various canvas contexts which could then be manipulated. More info here: http://www.dialogic.com/den/developers/b/developers-blog/archive/2014/08/11/powermedia-xms-html5-canvas-a-better-way-to-hangout.aspx
 
