@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>XMS NetAnn Conferencing Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+     <!--- Javascript --->
+     <!--<script src="js/webrtc.js"></script>-->
+     <script src="js/conf720p.js"></script>
+     <script src="js/conference.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-signin" role="form">
+        
+          <div id="loginPanel">
+               <h2 class="form-signin-heading">Login: </h2>
+               <input type="text" class="form-control" id="username" placeholder="username" required autofocus></br>
+               <button class="btn btn-lg btn-primary btn-block" onclick="conferenceLoginClickHandler()">Enter</button>
+          </div>
+        
+          <div id="videoPanel" hidden>
+               <video id="remoteVideo" width="1280" height="720" autoplay controls>
+               </video>
+               <video id="localVideo" height="300" style='visibility:hidden' autoplay controls muted>
+               </video>
+          </div>
+        
+          <div id="conferencePanel" hidden>
+               <h2 class="form-signin-heading">Conference ID:</h2>
+               <input type="text" class="form-control" id="confID" placeholder="i.e. 1234" required autofocus></br>
+               <button class="btn btn-lg btn-primary btn-block" onclick="conferenceClickJoinHandler()">Join</button>
+          </div>
+                
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   
+  </body>
+</html>
+
+
